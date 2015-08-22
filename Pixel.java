@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 @SuppressWarnings("serial")
 public class Pixel extends JPanel {
 
-	private int color,size,x,y;
+	private int color=0,size,x,y;
 	
 	public Pixel(/*int x,int y,*/ int color,int size) {       
 		//this.x=x;
@@ -25,6 +25,7 @@ public class Pixel extends JPanel {
 	   }
 	 
 	   public void paintComponent(Graphics g) {
+		   
 		   Graphics2D g2d = (Graphics2D) g;
 		   
 		   
@@ -60,6 +61,7 @@ public class Pixel extends JPanel {
 	  }
 	  
 	  public void setColor(int color){
+		 
 		  switch(color){
 		   case -2:this.color=-2;
 		   //System.out.println("im -2 brown");
@@ -73,6 +75,7 @@ public class Pixel extends JPanel {
 		   case 2:this.color=2;
 			   break;
 		   case 3:if(this.color!=2){this.color+=1;}else{this.color=-1;}
+		   
 		   	   break;
 		   case 4:if(this.color==0){this.color=2;}else{this.color=0;}
 	   	   	   break;

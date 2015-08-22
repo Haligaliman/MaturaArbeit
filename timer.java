@@ -1,8 +1,8 @@
-import java.util.ArrayList;
+
 
 public class timer {
 	
-	static Long[] startTime = new Long[10];
+	private static Long[] startTime = new Long[10];
 	
 	
 
